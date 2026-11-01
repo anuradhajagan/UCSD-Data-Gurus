@@ -1,4 +1,4 @@
-/* chart 2: world fertility rate (births per woman), 1960-2019, with the 2.1 replacement line */
+/* chart 1: world fertility rate (births per woman), 1960-2019, with the 2.1 replacement line */
 (function () {
   const SEL = "#fertility-chart";
   const REPLACEMENT = 2.1; // births per woman needed for a population to replace itself

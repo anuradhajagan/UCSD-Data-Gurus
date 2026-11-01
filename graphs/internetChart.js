@@ -1,4 +1,4 @@
-/* chart 4: % of people using the internet by income group, ~2000 vs ~2019 (grouped bars) */
+/* chart 2: % of people using the internet by income group, ~2000 vs ~2019 (grouped bars) */
 (function () {
   const SEL = "#internet-chart";
   const GROUPS = ["Low income", "Lower middle income", "Upper middle income", "High income", "World"];

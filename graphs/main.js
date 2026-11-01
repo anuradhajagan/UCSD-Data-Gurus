@@ -1,4 +1,4 @@
-/* shared stuff: loads the data once, draws the 5 charts, redraws when the window resizes.
+/* shared stuff: loads the data once, draws the charts, redraws when the window resizes.
    each chart file adds { draw } to App.charts */
 
 const App = (window.App = window.App || {});
@@ -11,14 +11,10 @@ App.widthOf = (sel) => document.querySelector(sel).getBoundingClientRect().width
 // waits for DOMContentLoaded so every chart file has run first, otherwise a fast data
 // load can finish before the last chart script is added and that chart gets skipped
 window.addEventListener("DOMContentLoaded", () => Promise.all([
-  d3.csv("data/aging_world.csv", d3.autoType),
-  d3.csv("data/electricity.csv", d3.autoType),
-  d3.csv("data/rd_spending.csv", d3.autoType),
-  d3.json("data/world.geo.json"),
   d3.csv("data/fertility_world.csv", d3.autoType),
   d3.csv("data/internet_income.csv", d3.autoType),
-]).then(([aging, electricity, rd, world, fertility, internet]) => {
-  App.data = { aging, electricity, rd, world, fertility, internet };
+]).then(([fertility, internet]) => {
+  App.data = { fertility, internet };
   const drawAll = () => App.charts.forEach((c) => c.draw(App.data));
   drawAll();
 
