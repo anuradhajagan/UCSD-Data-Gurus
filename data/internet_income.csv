@@ -1,0 +1,11 @@
+group,period,year,internet
+Low income,start,2000,0.1
+Low income,end,2017,14.1
+Lower middle income,start,2000,0.6
+Lower middle income,end,2019,41.2
+Upper middle income,start,2000,2.6
+Upper middle income,end,2019,67.8
+High income,start,2000,30.5
+High income,end,2019,89.1
+World,start,2000,6.7
+World,end,2019,56.7

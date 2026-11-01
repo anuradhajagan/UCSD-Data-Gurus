@@ -1,0 +1,28 @@
+/* kept pretty plain on purpose */
+body {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 16px 40px;
+  background: white;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+h1 { font-size: 24px; }
+h2 { font-size: 18px; margin-bottom: 4px; }
+.team { color: #555; margin-top: -8px; }
+section { margin: 36px 0; }
+.subtitle { color: #444; font-size: 14px; margin: 0 0 10px; }
+.source { color: #777; font-size: 12px; margin: 4px 0; }
+.chart { width: 100%; }
+.chart svg { display: block; }
+.axis-label, .point-label { font-size: 12px; fill: #333; }
+.map-year { font-size: 15px; margin: 14px 0 4px; }
+.map-legend { margin-bottom: 4px; }
+.error { color: crimson; font-weight: bold; }
+
+/* when printing / saving as pdf, don't split a chart across two pages */
+@media print {
+  section, .map-block { break-inside: avoid; }
+  body { padding: 0; }
+}

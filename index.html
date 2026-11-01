@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Living Conditions 1960–2020</title>
+  <!-- all paths are relative so it works on github pages from root or /docs -->
+  <link rel="stylesheet" href="css/style.css?v=8" />
+</head>
+<body>
+  <h1>How have living conditions and development changed across countries from 1960 to 2020?</h1>
+  <p class="team">DSC 209R Project 3: Juan Mo, Nick Puckdee, Snigdha Tiwari, Anuradha Jaganathan</p>
+
+  <main>
+    <!-- chart 1 -->
+    <section>
+      <h2>1. Population Aging Over Time (1960–2020)</h2>
+      <p class="subtitle">The global share of people aged 65 and above increased from about 5% in 1960 to over 9% in 2020, showing that the world’s population is aging.</p>
+      <div class="chart" id="aging-chart"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- chart 2 -->
+    <section>
+      <h2>2. Family Size: Fertility Rate (1960–2019)</h2>
+      <p class="subtitle">The average number of children born per woman from 1960 to 2019 decreased from about 5 to 2.5 showing that family sizes are getting smaller.</p>
+      <div class="chart" id="fertility-chart"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- chart 3 -->
+    <section>
+      <h2>3. Global Access to Electricity (2000 vs 2019)</h2>
+      <p class="subtitle">Electricity access improved in many countries from 2000 to 2019, but remained limited in parts of sub-Saharan Africa.</p>
+      <div class="chart" id="electricity-map"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- chart 4 -->
+    <section>
+      <h2>4. Internet Users by Country Income Level (~2000 vs ~2019)</h2>
+      <p class="subtitle">Internet use grew in every income group from 2000 to 2019, but only about 14% of people in low-income countries were online (2017, the latest data) compared with 89% in high-income countries.</p>
+      <div class="chart" id="internet-chart"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- chart 5 -->
+    <section>
+      <h2>5. How Much Do Countries Spend on Research and Development? (% of GDP)</h2>
+      <p class="subtitle">The average share of GDP spent on research and development among countries with available data fluctuated over time but generally increased after 2007.</p>
+      <div class="chart" id="rd-chart"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- interaction plan (from the team doc) -->
+    <section class="plan">
+      <h2>Interactive chart plan</h2>
+      <p>What users can click, filter, or change.</p>
+      <p><b>Graph 1 Interactive chart plan:</b> Users can choose a country or “World” from the dropdown to see how the percentage of people aged 65 and above has changed over time.</p>
+      <p><b>Graph 2 Interactive chart plan:</b> Users can choose a country or “World” from the dropdown to see how the number of children born per woman has changed over time. Hovering over the line will show the exact value for each year.</p>
+      <p><b>Graph 3 Interactive chart plan:</b> Users will be able to select a country to explore population aging and move a year slider to compare electricity access across countries over time. Hovering over the charts will show exact values.</p>
+      <p><b>Graph 4 Interactive chart plan:</b> Users can hover over the bars to see the exact percentage of people using the internet and the year for each income group.</p>
+      <p><b>Graph 5 Interactive chart plan:</b> Users can hover over the chart to see each year’s average research and development spending as a percentage of GDP and the number of countries included.</p>
+    </section>
+  </main>
+
+  <!-- d3 v7, pinned so it doesn't change on us -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <!-- main.js has to load first, then the charts -->
+  <script src="js/main.js?v=8"></script>
+  <script src="js/agingChart.js?v=8"></script>
+  <script src="js/fertilityChart.js?v=8"></script>
+  <script src="js/electricityMap.js?v=8"></script>
+  <script src="js/internetChart.js?v=8"></script>
+  <script src="js/rdChart.js?v=8"></script>
+</body>
+</html>
