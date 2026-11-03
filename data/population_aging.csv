@@ -1,0 +1,776 @@
+country,code,year,aged65
+Afghanistan,AFG,1960,2.798
+Afghanistan,AFG,1980,2.435
+Afghanistan,AFG,2000,2.292
+Afghanistan,AFG,2019,2.616
+Albania,ALB,1960,5.411
+Albania,ALB,1980,5.298
+Albania,ALB,2000,7.058
+Albania,ALB,2019,14.203
+Algeria,DZA,1960,3.241
+Algeria,DZA,1980,3.448
+Algeria,DZA,2000,4.307
+Algeria,DZA,2019,6.553
+Angola,AGO,1960,3.007
+Angola,AGO,1980,2.563
+Angola,AGO,2000,2.567
+Angola,AGO,2019,2.199
+Antigua and Barbuda,ATG,1960,4.238
+Antigua and Barbuda,ATG,1980,5.483
+Antigua and Barbuda,ATG,2000,6.579
+Antigua and Barbuda,ATG,2019,9.055
+Argentina,ARG,1960,5.532
+Argentina,ARG,1980,8.117
+Argentina,ARG,2000,9.729
+Argentina,ARG,2019,11.243
+Armenia,ARM,1960,6.348
+Armenia,ARM,1980,5.96
+Armenia,ARM,2000,10.016
+Armenia,ARM,2019,11.484
+Aruba,ABW,1960,2.483
+Aruba,ABW,1980,6.851
+Aruba,ABW,2000,7.58
+Aruba,ABW,2019,14.058
+Australia,AUS,1960,8.611
+Australia,AUS,1980,9.624
+Australia,AUS,2000,12.324
+Australia,AUS,2019,15.921
+Austria,AUT,1960,12.152
+Austria,AUT,1980,15.195
+Austria,AUT,2000,15.39
+Austria,AUT,2019,19.076
+Azerbaijan,AZE,1960,5.384
+Azerbaijan,AZE,1980,5.077
+Azerbaijan,AZE,2000,5.85
+Azerbaijan,AZE,2019,6.446
+"Bahamas, The",BHS,1960,3.791
+"Bahamas, The",BHS,1980,4.114
+"Bahamas, The",BHS,2000,5.384
+"Bahamas, The",BHS,2019,7.483
+Bahrain,BHR,1960,2.991
+Bahrain,BHR,1980,2.064
+Bahrain,BHR,2000,2.453
+Bahrain,BHR,2019,2.519
+Bangladesh,BGD,1960,2.693
+Bangladesh,BGD,1980,3.089
+Bangladesh,BGD,2000,3.854
+Bangladesh,BGD,2019,5.18
+Barbados,BRB,1960,6.828
+Barbados,BRB,1980,10.604
+Barbados,BRB,2000,12.075
+Barbados,BRB,2019,16.231
+Belarus,BLR,1960,8.348
+Belarus,BLR,1980,10.751
+Belarus,BLR,2000,13.479
+Belarus,BLR,2019,15.201
+Belgium,BEL,1960,11.874
+Belgium,BEL,1980,14.445
+Belgium,BEL,2000,16.866
+Belgium,BEL,2019,19.007
+Belize,BLZ,1960,4.148
+Belize,BLZ,1980,4.491
+Belize,BLZ,2000,3.908
+Belize,BLZ,2019,4.867
+Benin,BEN,1960,5.021
+Benin,BEN,1980,4.361
+Benin,BEN,2000,3.257
+Benin,BEN,2019,3.265
+Bhutan,BTN,1960,2.359
+Bhutan,BTN,1980,2.475
+Bhutan,BTN,2000,3.916
+Bhutan,BTN,2019,6.093
+Bolivia,BOL,1960,4.533
+Bolivia,BOL,1980,4.097
+Bolivia,BOL,2000,5.245
+Bolivia,BOL,2019,7.339
+Bosnia and Herzegovina,BIH,1960,3.443
+Bosnia and Herzegovina,BIH,1980,5.794
+Bosnia and Herzegovina,BIH,2000,10.975
+Bosnia and Herzegovina,BIH,2019,17.201
+Botswana,BWA,1960,4.289
+Botswana,BWA,1980,3.385
+Botswana,BWA,2000,3.254
+Botswana,BWA,2019,4.366
+Brazil,BRA,1960,3.151
+Brazil,BRA,1980,3.83
+Brazil,BRA,2000,5.249
+Brazil,BRA,2019,9.252
+Brunei Darussalam,BRN,1960,3.879
+Brunei Darussalam,BRN,1980,2.82
+Brunei Darussalam,BRN,2000,2.368
+Brunei Darussalam,BRN,2019,5.209
+Bulgaria,BGR,1960,7.575
+Bulgaria,BGR,1980,11.849
+Bulgaria,BGR,2000,16.595
+Bulgaria,BGR,2019,21.253
+Burkina Faso,BFA,1960,2.332
+Burkina Faso,BFA,1980,3.177
+Burkina Faso,BFA,2000,2.765
+Burkina Faso,BFA,2019,2.407
+Burundi,BDI,1960,2.935
+Burundi,BDI,1980,3.137
+Burundi,BDI,2000,2.498
+Burundi,BDI,2019,2.312
+Cabo Verde,CPV,1960,5.06
+Cabo Verde,CPV,1980,4.955
+Cabo Verde,CPV,2000,5.014
+Cabo Verde,CPV,2019,4.698
+Cambodia,KHM,1960,2.525
+Cambodia,KHM,1980,2.71
+Cambodia,KHM,2000,3.08
+Cambodia,KHM,2019,4.718
+Cameroon,CMR,1960,3.849
+Cameroon,CMR,1980,3.665
+Cameroon,CMR,2000,3.156
+Cameroon,CMR,2019,2.724
+Canada,CAN,1960,7.699
+Canada,CAN,1980,9.428
+Canada,CAN,2000,12.565
+Canada,CAN,2019,17.648
+Central African Republic,CAF,1960,4.998
+Central African Republic,CAF,1980,4.396
+Central African Republic,CAF,2000,3.531
+Central African Republic,CAF,2019,2.815
+Chad,TCD,1960,3.822
+Chad,TCD,1980,3.495
+Chad,TCD,2000,2.859
+Chad,TCD,2019,2.492
+Channel Islands,CHI,1960,13.167
+Channel Islands,CHI,1980,15.005
+Channel Islands,CHI,2000,14.523
+Channel Islands,CHI,2019,17.601
+Chile,CHL,1960,3.752
+Chile,CHL,1980,4.906
+Chile,CHL,2000,7.651
+Chile,CHL,2019,11.882
+China,CHN,1960,3.689
+China,CHN,1980,4.674
+China,CHN,2000,6.812
+China,CHN,2019,11.472
+Colombia,COL,1960,2.919
+Colombia,COL,1980,3.539
+Colombia,COL,2000,5.203
+Colombia,COL,2019,8.766
+Comoros,COM,1960,3.198
+Comoros,COM,1980,3.216
+Comoros,COM,2000,3.036
+Comoros,COM,2019,3.055
+"Congo, Dem. Rep.",COD,1960,2.935
+"Congo, Dem. Rep.",COD,1980,2.897
+"Congo, Dem. Rep.",COD,2000,2.953
+"Congo, Dem. Rep.",COD,2019,3.017
+"Congo, Rep.",COG,1960,3.467
+"Congo, Rep.",COG,1980,3.139
+"Congo, Rep.",COG,2000,2.713
+"Congo, Rep.",COG,2019,2.721
+Costa Rica,CRI,1960,2.996
+Costa Rica,CRI,1980,3.944
+Costa Rica,CRI,2000,5.581
+Costa Rica,CRI,2019,9.88
+Cote d'Ivoire,CIV,1960,2.735
+Cote d'Ivoire,CIV,1980,2.607
+Cote d'Ivoire,CIV,2000,2.827
+Cote d'Ivoire,CIV,2019,2.873
+Croatia,HRV,1960,6.931
+Croatia,HRV,1980,11.605
+Croatia,HRV,2000,15.566
+Croatia,HRV,2019,20.86
+Cuba,CUB,1960,4.652
+Cuba,CUB,1980,7.802
+Cuba,CUB,2000,9.851
+Cuba,CUB,2019,15.565
+Curacao,CUW,1960,4.871
+Curacao,CUW,1980,6.047
+Curacao,CUW,2000,10.27
+Curacao,CUW,2019,17.169
+Cyprus,CYP,1960,5.904
+Cyprus,CYP,1980,9.35
+Cyprus,CYP,2000,10.229
+Cyprus,CYP,2019,14.048
+Czech Republic,CZE,1960,9.356
+Czech Republic,CZE,1980,13.559
+Czech Republic,CZE,2000,13.803
+Czech Republic,CZE,2019,19.801
+Denmark,DNK,1960,10.603
+Denmark,DNK,1980,14.425
+Denmark,DNK,2000,14.854
+Denmark,DNK,2019,19.965
+Djibouti,DJI,1960,2.315
+Djibouti,DJI,1980,2.353
+Djibouti,DJI,2000,3.008
+Djibouti,DJI,2019,4.609
+Dominican Republic,DOM,1960,2.545
+Dominican Republic,DOM,1980,2.966
+Dominican Republic,DOM,2000,4.807
+Dominican Republic,DOM,2019,7.298
+Ecuador,ECU,1960,4.699
+Ecuador,ECU,1980,4.111
+Ecuador,ECU,2000,4.889
+Ecuador,ECU,2019,7.372
+"Egypt, Arab Rep.",EGY,1960,3.798
+"Egypt, Arab Rep.",EGY,1980,4.487
+"Egypt, Arab Rep.",EGY,2000,4.916
+"Egypt, Arab Rep.",EGY,2019,5.276
+El Salvador,SLV,1960,3.342
+El Salvador,SLV,1980,3.49
+El Salvador,SLV,2000,5.476
+El Salvador,SLV,2019,8.47
+Equatorial Guinea,GNQ,1960,5.689
+Equatorial Guinea,GNQ,1980,4.81
+Equatorial Guinea,GNQ,2000,3.634
+Equatorial Guinea,GNQ,2019,2.425
+Eritrea,ERI,1960,2.761
+Eritrea,ERI,1980,2.599
+Eritrea,ERI,2000,3.83
+Estonia,EST,1960,10.546
+Estonia,EST,1980,12.514
+Estonia,EST,2000,15.018
+Estonia,EST,2019,19.992
+Eswatini,SWZ,1960,2.97
+Eswatini,SWZ,1980,2.675
+Eswatini,SWZ,2000,2.832
+Eswatini,SWZ,2019,4.015
+Ethiopia,ETH,1960,2.64
+Ethiopia,ETH,1980,3.204
+Ethiopia,ETH,2000,3.102
+Ethiopia,ETH,2019,3.517
+Fiji,FJI,1960,2.164
+Fiji,FJI,1980,2.563
+Fiji,FJI,2000,3.415
+Fiji,FJI,2019,5.624
+Finland,FIN,1960,7.328
+Finland,FIN,1980,12.019
+Finland,FIN,2000,14.994
+Finland,FIN,2019,22.141
+France,FRA,1960,11.651
+France,FRA,1980,13.916
+France,FRA,2000,16.057
+France,FRA,2019,20.391
+French Polynesia,PYF,1960,2.816
+French Polynesia,PYF,1980,3.145
+French Polynesia,PYF,2000,4.262
+French Polynesia,PYF,2019,8.681
+Gabon,GAB,1960,7.559
+Gabon,GAB,1980,6.075
+Gabon,GAB,2000,5.213
+Gabon,GAB,2019,3.545
+"Gambia, The",GMB,1960,2.178
+"Gambia, The",GMB,1980,2.275
+"Gambia, The",GMB,2000,2.565
+"Gambia, The",GMB,2019,2.561
+Georgia,GEO,1960,8.641
+Georgia,GEO,1980,9.246
+Georgia,GEO,2000,12.933
+Georgia,GEO,2019,15.061
+Germany,DEU,1960,11.474
+Germany,DEU,1980,15.652
+Germany,DEU,2000,16.488
+Germany,DEU,2019,21.563
+Ghana,GHA,1960,2.345
+Ghana,GHA,1980,2.672
+Ghana,GHA,2000,2.878
+Ghana,GHA,2019,3.097
+Greece,GRC,1960,7.047
+Greece,GRC,1980,12.468
+Greece,GRC,2000,16.45
+Greece,GRC,2019,21.941
+Grenada,GRD,1960,4.959
+Grenada,GRD,1980,7.156
+Grenada,GRD,2000,8.533
+Grenada,GRD,2019,9.677
+Guam,GUM,1960,1.633
+Guam,GUM,1980,2.885
+Guam,GUM,2000,5.353
+Guam,GUM,2019,10.19
+Guatemala,GTM,1960,2.631
+Guatemala,GTM,1980,2.969
+Guatemala,GTM,2000,3.984
+Guatemala,GTM,2019,4.929
+Guinea,GIN,1960,3.443
+Guinea,GIN,1980,3.274
+Guinea,GIN,2000,3.429
+Guinea,GIN,2019,2.942
+Guinea-Bissau,GNB,1960,3.523
+Guinea-Bissau,GNB,1980,3.889
+Guinea-Bissau,GNB,2000,2.922
+Guinea-Bissau,GNB,2019,2.863
+Guyana,GUY,1960,3.406
+Guyana,GUY,1980,3.757
+Guyana,GUY,2000,4.076
+Guyana,GUY,2019,6.712
+Haiti,HTI,1960,3.223
+Haiti,HTI,1980,4.107
+Haiti,HTI,2000,4.118
+Haiti,HTI,2019,5.064
+Honduras,HND,1960,3.235
+Honduras,HND,1980,3.27
+Honduras,HND,2000,3.68
+Honduras,HND,2019,4.828
+"Hong Kong SAR, China",HKG,1960,2.728
+"Hong Kong SAR, China",HKG,1980,6.418
+"Hong Kong SAR, China",HKG,2000,11.013
+"Hong Kong SAR, China",HKG,2019,17.498
+Hungary,HUN,1960,8.989
+Hungary,HUN,1980,13.601
+Hungary,HUN,2000,15.097
+Hungary,HUN,2019,19.694
+Iceland,ISL,1960,8.047
+Iceland,ISL,1980,9.866
+Iceland,ISL,2000,11.61
+Iceland,ISL,2019,15.192
+India,IND,1960,3.047
+India,IND,1980,3.609
+India,IND,2000,4.366
+India,IND,2019,6.378
+Indonesia,IDN,1960,3.554
+Indonesia,IDN,1980,3.567
+Indonesia,IDN,2000,4.699
+Indonesia,IDN,2019,6.05
+"Iran, Islamic Rep.",IRN,1960,4.014
+"Iran, Islamic Rep.",IRN,1980,2.962
+"Iran, Islamic Rep.",IRN,2000,4.381
+"Iran, Islamic Rep.",IRN,2019,6.359
+Iraq,IRQ,1960,3.113
+Iraq,IRQ,1980,4.092
+Iraq,IRQ,2000,3.476
+Iraq,IRQ,2019,3.399
+Ireland,IRL,1960,11.249
+Ireland,IRL,1980,10.713
+Ireland,IRL,2000,10.524
+Ireland,IRL,2019,14.223
+Israel,ISR,1960,4.654
+Israel,ISR,1980,8.663
+Israel,ISR,2000,10.029
+Israel,ISR,2019,12.209
+Italy,ITA,1960,9.521
+Italy,ITA,1980,13.358
+Italy,ITA,2000,18.285
+Italy,ITA,2019,23.012
+Jamaica,JAM,1960,4.335
+Jamaica,JAM,1980,6.752
+Jamaica,JAM,2000,7.813
+Jamaica,JAM,2019,8.922
+Japan,JPN,1960,5.621
+Japan,JPN,1980,8.914
+Japan,JPN,2000,16.984
+Japan,JPN,2019,28.002
+Jordan,JOR,1960,4.264
+Jordan,JOR,1980,3.184
+Jordan,JOR,2000,3.057
+Jordan,JOR,2019,3.893
+Kazakhstan,KAZ,1960,5.7
+Kazakhstan,KAZ,1980,6.111
+Kazakhstan,KAZ,2000,6.84
+Kazakhstan,KAZ,2019,7.652
+Kenya,KEN,1960,3.742
+Kenya,KEN,1980,2.869
+Kenya,KEN,2000,2.274
+Kenya,KEN,2019,2.424
+Kiribati,KIR,1960,3.764
+Kiribati,KIR,1980,3.287
+Kiribati,KIR,2000,3.296
+Kiribati,KIR,2019,4.082
+"Korea, Dem. People's Rep.",PRK,1960,3.208
+"Korea, Dem. People's Rep.",PRK,1980,3.558
+"Korea, Dem. People's Rep.",PRK,2000,5.895
+"Korea, Dem. People's Rep.",PRK,2019,9.258
+"Korea, Rep.",KOR,1960,3.366
+"Korea, Rep.",KOR,1980,4.118
+"Korea, Rep.",KOR,2000,7.186
+"Korea, Rep.",KOR,2019,15.06
+Kuwait,KWT,1960,1.998
+Kuwait,KWT,1980,1.635
+Kuwait,KWT,2000,1.58
+Kuwait,KWT,2019,2.764
+Kyrgyz Republic,KGZ,1960,7.082
+Kyrgyz Republic,KGZ,1980,5.797
+Kyrgyz Republic,KGZ,2000,5.507
+Kyrgyz Republic,KGZ,2019,4.6
+Lao PDR,LAO,1960,2.609
+Lao PDR,LAO,1980,3.488
+Lao PDR,LAO,2000,3.57
+Lao PDR,LAO,2019,4.164
+Latvia,LVA,1960,10.574
+Latvia,LVA,1980,13.073
+Latvia,LVA,2000,14.988
+Latvia,LVA,2019,20.337
+Lebanon,LBN,1960,5.951
+Lebanon,LBN,1980,5.439
+Lebanon,LBN,2000,5.7
+Lebanon,LBN,2019,7.273
+Lesotho,LSO,1960,4.657
+Lesotho,LSO,1980,4.21
+Lesotho,LSO,2000,4.077
+Lesotho,LSO,2019,4.926
+Liberia,LBR,1960,3.166
+Liberia,LBR,1980,3.16
+Liberia,LBR,2000,3.471
+Liberia,LBR,2019,3.286
+Libya,LBY,1960,3.886
+Libya,LBY,1980,2.788
+Libya,LBY,2000,3.765
+Libya,LBY,2019,4.458
+Lithuania,LTU,1960,7.926
+Lithuania,LTU,1980,11.354
+Lithuania,LTU,2000,13.909
+Lithuania,LTU,2019,20.158
+Luxembourg,LUX,1960,10.824
+Luxembourg,LUX,1980,13.641
+Luxembourg,LUX,2000,14.074
+Luxembourg,LUX,2019,14.275
+"Macao SAR, China",MAC,1960,4.966
+"Macao SAR, China",MAC,1980,7.579
+"Macao SAR, China",MAC,2000,7.387
+"Macao SAR, China",MAC,2019,11.212
+Madagascar,MDG,1960,3.262
+Madagascar,MDG,1980,3.368
+Madagascar,MDG,2000,2.966
+Madagascar,MDG,2019,3.044
+Malawi,MWI,1960,3.184
+Malawi,MWI,1980,2.832
+Malawi,MWI,2000,3.122
+Malawi,MWI,2019,2.642
+Malaysia,MYS,1960,3.417
+Malaysia,MYS,1980,3.59
+Malaysia,MYS,2000,3.915
+Malaysia,MYS,2019,6.921
+Maldives,MDV,1960,2.575
+Maldives,MDV,1980,2.535
+Maldives,MDV,2000,3.764
+Maldives,MDV,2019,3.641
+Mali,MLI,1960,2.271
+Mali,MLI,1980,3.247
+Mali,MLI,2000,3.299
+Mali,MLI,2019,2.495
+Malta,MLT,1960,7.951
+Malta,MLT,1980,9.852
+Malta,MLT,2000,12.404
+Malta,MLT,2019,20.817
+Mauritania,MRT,1960,2.095
+Mauritania,MRT,1980,2.874
+Mauritania,MRT,2000,3.229
+Mauritania,MRT,2019,3.156
+Mauritius,MUS,1960,2.476
+Mauritius,MUS,1980,3.633
+Mauritius,MUS,2000,6.141
+Mauritius,MUS,2019,11.999
+Mexico,MEX,1960,3.399
+Mexico,MEX,1980,3.928
+Mexico,MEX,2000,5.151
+Mexico,MEX,2019,7.417
+"Micronesia, Fed. Sts.",FSM,1960,3.466
+"Micronesia, Fed. Sts.",FSM,1980,3.505
+"Micronesia, Fed. Sts.",FSM,2000,3.649
+"Micronesia, Fed. Sts.",FSM,2019,4.193
+Moldova,MDA,1960,6.18
+Moldova,MDA,1980,7.744
+Moldova,MDA,2000,9.421
+Moldova,MDA,2019,12.013
+Mongolia,MNG,1960,4.827
+Mongolia,MNG,1980,4.495
+Mongolia,MNG,2000,3.691
+Mongolia,MNG,2019,4.189
+Montenegro,MNE,1960,6.167
+Montenegro,MNE,1980,8.129
+Montenegro,MNE,2000,11.567
+Montenegro,MNE,2019,15.389
+Morocco,MAR,1960,2.982
+Morocco,MAR,1980,3.294
+Morocco,MAR,2000,5.271
+Morocco,MAR,2019,7.3
+Mozambique,MOZ,1960,3.287
+Mozambique,MOZ,1980,3.46
+Mozambique,MOZ,2000,3.334
+Mozambique,MOZ,2019,2.878
+Myanmar,MMR,1960,3.313
+Myanmar,MMR,1980,3.661
+Myanmar,MMR,2000,4.493
+Myanmar,MMR,2019,6.012
+Namibia,NAM,1960,3.933
+Namibia,NAM,1980,3.571
+Namibia,NAM,2000,3.237
+Namibia,NAM,2019,3.608
+Nepal,NPL,1960,2.541
+Nepal,NPL,1980,3.29
+Nepal,NPL,2000,3.766
+Nepal,NPL,2019,5.783
+Netherlands,NLD,1960,8.91
+Netherlands,NLD,1980,11.377
+Netherlands,NLD,2000,13.582
+Netherlands,NLD,2019,19.605
+New Caledonia,NCL,1960,3.65
+New Caledonia,NCL,1980,4.287
+New Caledonia,NCL,2000,5.547
+New Caledonia,NCL,2019,9.427
+New Zealand,NZL,1960,8.636
+New Zealand,NZL,1980,9.763
+New Zealand,NZL,2000,11.816
+New Zealand,NZL,2019,15.994
+Nicaragua,NIC,1960,2.525
+Nicaragua,NIC,1980,2.703
+Nicaragua,NIC,2000,3.792
+Nicaragua,NIC,2019,5.458
+Niger,NER,1960,1.131
+Niger,NER,1980,1.926
+Niger,NER,2000,2.44
+Niger,NER,2019,2.597
+Nigeria,NGA,1960,2.824
+Nigeria,NGA,1980,2.784
+Nigeria,NGA,2000,2.817
+Nigeria,NGA,2019,2.743
+North Macedonia,MKD,1960,4.696
+North Macedonia,MKD,1980,6.336
+North Macedonia,MKD,2000,9.891
+North Macedonia,MKD,2019,14.085
+Norway,NOR,1960,11.037
+Norway,NOR,1980,14.729
+Norway,NOR,2000,15.256
+Norway,NOR,2019,17.273
+Oman,OMN,1960,2.987
+Oman,OMN,1980,2.727
+Oman,OMN,2000,2.433
+Oman,OMN,2019,2.449
+Pakistan,PAK,1960,4.319
+Pakistan,PAK,1980,3.84
+Pakistan,PAK,2000,3.996
+Pakistan,PAK,2019,4.322
+Panama,PAN,1960,3.617
+Panama,PAN,1980,4.157
+Panama,PAN,2000,5.52
+Panama,PAN,2019,8.314
+Papua New Guinea,PNG,1960,2.676
+Papua New Guinea,PNG,1980,2.64
+Papua New Guinea,PNG,2000,3.079
+Papua New Guinea,PNG,2019,3.509
+Paraguay,PRY,1960,3.197
+Paraguay,PRY,1980,3.822
+Paraguay,PRY,2000,4.358
+Paraguay,PRY,2019,6.621
+Peru,PER,1960,3.418
+Peru,PER,1980,3.635
+Peru,PER,2000,4.863
+Peru,PER,2019,8.393
+Philippines,PHL,1960,3.092
+Philippines,PHL,1980,3.211
+Philippines,PHL,2000,3.268
+Philippines,PHL,2019,5.315
+Poland,POL,1960,5.695
+Poland,POL,1980,10.208
+Poland,POL,2000,12.024
+Poland,POL,2019,18.117
+Portugal,PRT,1960,8.027
+Portugal,PRT,1980,11.53
+Portugal,PRT,2000,16.268
+Portugal,PRT,2019,22.357
+Puerto Rico,PRI,1960,5.407
+Puerto Rico,PRI,1980,8.008
+Puerto Rico,PRI,2000,11.369
+Puerto Rico,PRI,2019,19.697
+Qatar,QAT,1960,2.94
+Qatar,QAT,1980,1.578
+Qatar,QAT,2000,1.745
+Qatar,QAT,2019,1.523
+Romania,ROU,1960,6.828
+Romania,ROU,1980,10.19
+Romania,ROU,2000,13.609
+Romania,ROU,2019,18.79
+Russian Federation,RUS,1960,6.084
+Russian Federation,RUS,1980,10.286
+Russian Federation,RUS,2000,12.444
+Russian Federation,RUS,2019,15.094
+Rwanda,RWA,1960,3.126
+Rwanda,RWA,1980,2.384
+Rwanda,RWA,2000,3.64
+Rwanda,RWA,2019,3.028
+Samoa,WSM,1960,1.982
+Samoa,WSM,1980,2.764
+Samoa,WSM,2000,4.402
+Samoa,WSM,2019,4.933
+Sao Tome and Principe,STP,1960,3.815
+Sao Tome and Principe,STP,1980,4.295
+Sao Tome and Principe,STP,2000,3.285
+Sao Tome and Principe,STP,2019,2.96
+Saudi Arabia,SAU,1960,3.622
+Saudi Arabia,SAU,1980,3.024
+Saudi Arabia,SAU,2000,3.001
+Saudi Arabia,SAU,2019,3.413
+Senegal,SEN,1960,2.623
+Senegal,SEN,1980,2.659
+Senegal,SEN,2000,3.204
+Senegal,SEN,2019,3.098
+Serbia,SRB,1960,6.582
+Serbia,SRB,1980,9.215
+Serbia,SRB,2000,13.537
+Serbia,SRB,2019,18.741
+Seychelles,SYC,1960,6.201
+Seychelles,SYC,1980,6.52
+Seychelles,SYC,2000,7.619
+Seychelles,SYC,2019,7.805
+Sierra Leone,SLE,1960,3.694
+Sierra Leone,SLE,1980,3.87
+Sierra Leone,SLE,2000,3.292
+Sierra Leone,SLE,2019,2.948
+Singapore,SGP,1960,2.045
+Singapore,SGP,1980,4.726
+Singapore,SGP,2000,6.384
+Singapore,SGP,2019,12.393
+Slovak Republic,SVK,1960,6.776
+Slovak Republic,SVK,1980,10.484
+Slovak Republic,SVK,2000,11.292
+Slovak Republic,SVK,2019,16.172
+Slovenia,SVN,1960,7.778
+Slovenia,SVN,1980,11.379
+Slovenia,SVN,2000,14.11
+Slovenia,SVN,2019,20.186
+Solomon Islands,SLB,1960,2.651
+Solomon Islands,SLB,1980,3.146
+Solomon Islands,SLB,2000,2.856
+Solomon Islands,SLB,2019,3.631
+Somalia,SOM,1960,2.962
+Somalia,SOM,1980,3.194
+Somalia,SOM,2000,2.629
+Somalia,SOM,2019,2.889
+South Africa,ZAF,1960,3.866
+South Africa,ZAF,1980,3.859
+South Africa,ZAF,2000,4.516
+South Africa,ZAF,2019,5.415
+South Sudan,SSD,1960,2.759
+South Sudan,SSD,1980,2.657
+South Sudan,SSD,2000,3.08
+South Sudan,SSD,2019,3.377
+Spain,ESP,1960,8.213
+Spain,ESP,1980,11.09
+Spain,ESP,2000,16.667
+Spain,ESP,2019,19.648
+Sri Lanka,LKA,1960,4.522
+Sri Lanka,LKA,1980,4.361
+Sri Lanka,LKA,2000,6.22
+Sri Lanka,LKA,2019,10.839
+St. Lucia,LCA,1960,4.076
+St. Lucia,LCA,1980,4.981
+St. Lucia,LCA,2000,7.466
+St. Lucia,LCA,2019,10.035
+St. Vincent and the Grenadines,VCT,1960,4.06
+St. Vincent and the Grenadines,VCT,1980,5.814
+St. Vincent and the Grenadines,VCT,2000,6.828
+St. Vincent and the Grenadines,VCT,2019,9.741
+Sudan,SDN,1960,3.235
+Sudan,SDN,1980,2.929
+Sudan,SDN,2000,3.06
+Sudan,SDN,2019,3.627
+Suriname,SUR,1960,4.167
+Suriname,SUR,1980,4.438
+Suriname,SUR,2000,5.491
+Suriname,SUR,2019,7.015
+Sweden,SWE,1960,11.759
+Sweden,SWE,1980,16.321
+Sweden,SWE,2000,17.304
+Sweden,SWE,2019,20.199
+Switzerland,CHE,1960,10.21
+Switzerland,CHE,1980,13.853
+Switzerland,CHE,2000,15.268
+Switzerland,CHE,2019,18.838
+Syrian Arab Republic,SYR,1960,3.996
+Syrian Arab Republic,SYR,1980,2.965
+Syrian Arab Republic,SYR,2000,3.341
+Syrian Arab Republic,SYR,2019,4.692
+Tajikistan,TJK,1960,4.775
+Tajikistan,TJK,1980,4.596
+Tajikistan,TJK,2000,3.6
+Tajikistan,TJK,2019,3.086
+Tanzania,TZA,1960,2.47
+Tanzania,TZA,1980,2.608
+Tanzania,TZA,2000,2.589
+Tanzania,TZA,2019,2.621
+Thailand,THA,1960,3.315
+Thailand,THA,1980,3.747
+Thailand,THA,2000,6.532
+Thailand,THA,2019,12.406
+Timor-Leste,TLS,1960,2.497
+Timor-Leste,TLS,1980,2.676
+Timor-Leste,TLS,2000,3.408
+Timor-Leste,TLS,2019,4.287
+Togo,TGO,1960,3.211
+Togo,TGO,1980,2.918
+Togo,TGO,2000,2.861
+Togo,TGO,2019,2.887
+Tonga,TON,1960,3.378
+Tonga,TON,1980,3.262
+Tonga,TON,2000,5.611
+Tonga,TON,2019,5.942
+Trinidad and Tobago,TTO,1960,3.466
+Trinidad and Tobago,TTO,1980,5.427
+Trinidad and Tobago,TTO,2000,6.476
+Trinidad and Tobago,TTO,2019,11.118
+Tunisia,TUN,1960,3.729
+Tunisia,TUN,1980,3.908
+Tunisia,TUN,2000,6.729
+Tunisia,TUN,2019,8.593
+Turkey,TUR,1960,3.19
+Turkey,TUR,1980,4.715
+Turkey,TUR,2000,6.092
+Turkey,TUR,2019,8.726
+Turkmenistan,TKM,1960,5.201
+Turkmenistan,TKM,1980,4.253
+Turkmenistan,TKM,2000,4.278
+Turkmenistan,TKM,2019,4.592
+Uganda,UGA,1960,2.734
+Uganda,UGA,1980,2.602
+Uganda,UGA,2000,2.287
+Uganda,UGA,2019,1.963
+Ukraine,UKR,1960,7.136
+Ukraine,UKR,1980,11.827
+Ukraine,UKR,2000,13.8
+Ukraine,UKR,2019,16.705
+United Arab Emirates,ARE,1960,3.434
+United Arab Emirates,ARE,1980,1.447
+United Arab Emirates,ARE,2000,1.093
+United Arab Emirates,ARE,2019,1.157
+United Kingdom,GBR,1960,11.767
+United Kingdom,GBR,1980,14.947
+United Kingdom,GBR,2000,15.893
+United Kingdom,GBR,2019,18.509
+United States,USA,1960,9.116
+United States,USA,1980,11.557
+United States,USA,2000,12.334
+United States,USA,2019,16.21
+Uruguay,URY,1960,8.16
+Uruguay,URY,1980,10.522
+Uruguay,URY,2000,13.092
+Uruguay,URY,2019,14.941
+Uzbekistan,UZB,1960,5.919
+Uzbekistan,UZB,1980,5.164
+Uzbekistan,UZB,2000,4.62
+Uzbekistan,UZB,2019,4.595
+Vanuatu,VUT,1960,2.453
+Vanuatu,VUT,1980,2.995
+Vanuatu,VUT,2000,3.293
+Vanuatu,VUT,2019,3.616
+"Venezuela, RB",VEN,1960,2.308
+"Venezuela, RB",VEN,1980,3.202
+"Venezuela, RB",VEN,2000,4.486
+"Venezuela, RB",VEN,2019,7.611
+Vietnam,VNM,1960,4.722
+Vietnam,VNM,1980,5.337
+Vietnam,VNM,2000,6.419
+Vietnam,VNM,2019,7.554
+Virgin Islands (U.S.),VIR,1960,7.252
+Virgin Islands (U.S.),VIR,1980,4.87
+Virgin Islands (U.S.),VIR,2000,8.659
+Virgin Islands (U.S.),VIR,2019,19.875
+West Bank and Gaza,PSE,1960,4.015
+West Bank and Gaza,PSE,1980,2.256
+West Bank and Gaza,PSE,2000,2.275
+West Bank and Gaza,PSE,2019,3.173
+"Yemen, Rep.",YEM,1960,3.706
+"Yemen, Rep.",YEM,1980,3.024
+"Yemen, Rep.",YEM,2000,2.785
+"Yemen, Rep.",YEM,2019,2.902
+Zambia,ZMB,1960,2.547
+Zambia,ZMB,1980,2.537
+Zambia,ZMB,2000,2.392
+Zambia,ZMB,2019,2.115
+Zimbabwe,ZWE,1960,3.263
+Zimbabwe,ZWE,1980,2.711
+Zimbabwe,ZWE,2000,2.99
+Zimbabwe,ZWE,2019,2.981

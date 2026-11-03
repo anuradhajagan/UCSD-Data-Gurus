@@ -1,0 +1,33 @@
+.aging-section #aging-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.aging-section #aging-chart svg {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.aging-section #aging-chart .aging-note {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.aging-section #aging-chart circle:hover {
+  fill: #d97706;
+  fill-opacity: 1;
+}
+
+.aging-section #aging-chart svg,
+.aging-section #aging-chart rect,
+.aging-section #aging-chart circle {
+  transform: none;
+  transition: none;
+}

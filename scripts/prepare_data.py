@@ -3,7 +3,7 @@
 data prep for dsc 209r project 3
 question: how have living conditions and development changed across countries from 1960 to 2020?
 
-downloads 2 csvs from light-and-salt/World-Bank-Data-by-Indicators,
+downloads 5 csvs from light-and-salt/World-Bank-Data-by-Indicators,
 keeps just what the charts need, and writes small files to ../data/
 only uses built-in python (the csv module handles the commas in the column names)
 
@@ -38,6 +38,14 @@ AGGREGATE_CODES = set("""
     LMY LTE MEA MIC MNA NAC OED OSS PRE PSS PST SAS SSA
     SSF SST TEA TEC TLA TMN TSA TSS UMC WLD
 """.split())
+
+# chart 4: Population aging
+AGING_FILE = "health/health.csv"
+AGING = P + "Population ages 65 and above (% of total population)"
+
+# chart 5: research and development expenditure (% of GDP) by country
+RD_FILE = "science-and-technology/science-and-technology.csv"
+RD = "average_value_Research and development expenditure (% of GDP)"
 
 
 def rows(path):
@@ -130,6 +138,92 @@ def main():
     if electricity:
         years = sorted({d["year"] for d in electricity})
         print(f"  electricity coverage: {years[0]}-{years[-1]}")
+
+    # ---- chart 4: population aging ----
+    aging = []
+    for r in rows(AGING_FILE):
+        aged65 = num(r.get(AGING))
+        year_value = num(r.get("Year"))
+        code = r.get("Country Code", "").strip().upper()
+        country = r.get("Country Name", "").strip()
+        # Skip missing or invalid percentages.
+        if aged65 is None or not 0 <= aged65 <= 100:
+            continue
+        # Keep 4 years from 1960 1980 2000 2020.
+        if year_value not in (1960, 1980, 2000, 2019):
+            continue
+        if not year_value.is_integer():
+            continue
+        # Exclude regional and income-group aggregates.
+        if (
+            not country
+            or len(code) != 3
+            or not code.isalpha()
+            or code in AGGREGATE_CODES
+        ):
+            continue
+        aging.append({
+            "country": country,
+            "code": code,
+            "year": int(year_value),
+            "aged65": round(aged65, 3)
+        })
+    aging.sort(key=lambda d: (d["country"], d["year"]))
+    write_csv(
+        "population_aging.csv",
+        ["country", "code", "year", "aged65"],
+        aging
+    )
+    if aging:
+        years = sorted({d["year"] for d in aging})
+        print(
+            f"  aging coverage: {years[0]}-{years[-1]}"
+        )
+
+    # ---- chart 5: research and development expenditure (% of GDP) ----
+    research = []
+    for r in rows(RD_FILE):
+        value = num(r.get(RD))
+        year = num(r.get("Year"))
+        code = r.get("Country Code", "").strip().upper()
+        country = r.get("Country Name", "").strip()
+        # Skip missing or invalid values. Keep real zeros.
+        if value is None or not 0 <= value <= 100:
+            continue
+        if year is None or not 1960 <= year <= 2020:
+            continue
+        if not year.is_integer():
+            continue
+        # Exclude regional and income-group totals.
+        if not country or len(code) != 3 or code in AGGREGATE_CODES:
+            continue
+        research.append({
+            "country": country,
+            "code": code,
+            "year": int(year),
+            "rd": value
+        })
+    # One observation per country and year.
+    unique = {}
+    for d in research:
+        unique[(d["code"], d["year"])] = d
+    # Group values by year.
+    by_year = {}
+    for d in unique.values():
+        by_year.setdefault(d["year"], []).append(d["rd"])
+    # Calculate an equally weighted country average.
+    averages = []
+    for year, values in sorted(by_year.items()):
+        averages.append({
+            "year": year,
+            "average": round(sum(values) / len(values), 4),
+            "count": len(values)
+        })
+    write_csv(
+        "rd_average.csv",
+        ["year", "average", "count"],
+        averages
+    )
 
 
 if __name__ == "__main__":
