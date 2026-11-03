@@ -1,0 +1,32 @@
+
+.electricity-section .electricity-maps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: none;
+}
+
+.electricity-section .electricity-panel {
+  min-width: 0;
+}
+
+.electricity-section .electricity-panel svg {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+/* Smaller shared color bar */
+.electricity-section .electricity-legend {
+  width: 380px;
+  max-width: 100%;
+  margin: 12px auto;
+}
+
+.electricity-section .electricity-legend svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

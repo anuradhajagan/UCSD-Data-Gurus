@@ -1,0 +1,407 @@
+country,code,year,access
+Aruba,ABW,2000,91.66
+Albania,ALB,2000,100.0
+Andorra,AND,2000,100.0
+United Arab Emirates,ARE,2000,100.0
+Argentina,ARG,2000,95.45
+Armenia,ARM,2000,98.9
+Antigua and Barbuda,ATG,2000,97.46
+Australia,AUS,2000,100.0
+Austria,AUT,2000,100.0
+Azerbaijan,AZE,2000,98.91
+Burundi,BDI,2000,2.44
+Belgium,BEL,2000,100.0
+Benin,BEN,2000,21.54
+Burkina Faso,BFA,2000,9.07
+Bangladesh,BGD,2000,32.0
+Bulgaria,BGR,2000,100.0
+Bahrain,BHR,2000,100.0
+"Bahamas, The",BHS,2000,100.0
+Bosnia and Herzegovina,BIH,2000,100.0
+Belarus,BLR,2000,100.0
+Belize,BLZ,2000,79.0
+Bermuda,BMU,2000,100.0
+Bolivia,BOL,2000,69.96
+Brazil,BRA,2000,94.36
+Barbados,BRB,2000,100.0
+Brunei Darussalam,BRN,2000,100.0
+Bhutan,BTN,2000,31.15
+Botswana,BWA,2000,27.27
+Central African Republic,CAF,2000,6.0
+Canada,CAN,2000,100.0
+Switzerland,CHE,2000,100.0
+Channel Islands,CHI,2000,100.0
+Chile,CHL,2000,97.94
+China,CHN,2000,96.93
+Cote d'Ivoire,CIV,2000,48.67
+Cameroon,CMR,2000,41.0
+"Congo, Dem. Rep.",COD,2000,6.7
+Colombia,COL,2000,95.2
+Comoros,COM,2000,39.74
+Costa Rica,CRI,2000,96.94
+Cuba,CUB,2000,97.0
+Curacao,CUW,2000,100.0
+Cayman Islands,CYM,2000,100.0
+Cyprus,CYP,2000,100.0
+Czech Republic,CZE,2000,100.0
+Germany,DEU,2000,100.0
+Djibouti,DJI,2000,56.36
+Dominica,DMA,2000,80.97
+Denmark,DNK,2000,100.0
+Dominican Republic,DOM,2000,88.76
+Ecuador,ECU,2000,93.54
+"Egypt, Arab Rep.",EGY,2000,97.7
+Eritrea,ERI,2000,29.2
+Spain,ESP,2000,100.0
+Estonia,EST,2000,100.0
+Ethiopia,ETH,2000,12.7
+Finland,FIN,2000,100.0
+Fiji,FJI,2000,75.71
+France,FRA,2000,100.0
+Faroe Islands,FRO,2000,100.0
+"Micronesia, Fed. Sts.",FSM,2000,46.0
+Gabon,GAB,2000,73.6
+United Kingdom,GBR,2000,100.0
+Ghana,GHA,2000,43.7
+Gibraltar,GIB,2000,100.0
+Guinea,GIN,2000,15.47
+"Gambia, The",GMB,2000,34.3
+Greece,GRC,2000,100.0
+Grenada,GRD,2000,85.93
+Greenland,GRL,2000,100.0
+Guatemala,GTM,2000,73.32
+Guam,GUM,2000,100.0
+Guyana,GUY,2000,74.49
+"Hong Kong SAR, China",HKG,2000,100.0
+Honduras,HND,2000,67.38
+Croatia,HRV,2000,100.0
+Haiti,HTI,2000,33.7
+Hungary,HUN,2000,100.0
+Indonesia,IDN,2000,86.3
+Isle of Man,IMN,2000,100.0
+India,IND,2000,59.34
+Ireland,IRL,2000,100.0
+"Iran, Islamic Rep.",IRN,2000,97.9
+Iceland,ISL,2000,100.0
+Israel,ISR,2000,100.0
+Italy,ITA,2000,100.0
+Jamaica,JAM,2000,84.38
+Jordan,JOR,2000,98.85
+Japan,JPN,2000,100.0
+Kazakhstan,KAZ,2000,99.47
+Kenya,KEN,2000,15.14
+Kyrgyz Republic,KGZ,2000,99.57
+Cambodia,KHM,2000,16.6
+St. Kitts and Nevis,KNA,2000,94.87
+"Korea, Rep.",KOR,2000,100.0
+Kuwait,KWT,2000,100.0
+Lao PDR,LAO,2000,42.48
+Libya,LBY,2000,99.8
+Liechtenstein,LIE,2000,100.0
+Lesotho,LSO,2000,4.26
+Lithuania,LTU,2000,100.0
+Luxembourg,LUX,2000,100.0
+Latvia,LVA,2000,100.0
+"Macao SAR, China",MAC,2000,100.0
+St. Martin (French part),MAF,2000,100.0
+Morocco,MAR,2000,69.56
+Monaco,MCO,2000,100.0
+Moldova,MDA,2000,100.0
+Madagascar,MDG,2000,13.23
+Maldives,MDV,2000,83.8
+Mexico,MEX,2000,98.01
+Marshall Islands,MHL,2000,68.51
+North Macedonia,MKD,2000,100.0
+Mali,MLI,2000,9.61
+Malta,MLT,2000,100.0
+Montenegro,MNE,2000,100.0
+Mongolia,MNG,2000,67.3
+Northern Mariana Islands,MNP,2000,100.0
+Mozambique,MOZ,2000,6.09
+Mauritius,MUS,2000,99.0
+Malawi,MWI,2000,4.8
+Namibia,NAM,2000,36.5
+New Caledonia,NCL,2000,100.0
+Niger,NER,2000,6.48
+Nigeria,NGA,2000,42.94
+Nicaragua,NIC,2000,72.78
+Netherlands,NLD,2000,100.0
+Norway,NOR,2000,100.0
+Nepal,NPL,2000,28.92
+Nauru,NRU,2000,99.34
+New Zealand,NZL,2000,100.0
+Oman,OMN,2000,100.0
+Pakistan,PAK,2000,70.35
+Panama,PAN,2000,81.4
+Peru,PER,2000,72.5
+Philippines,PHL,2000,74.65
+Palau,PLW,2000,97.92
+Papua New Guinea,PNG,2000,8.55
+Poland,POL,2000,100.0
+Puerto Rico,PRI,2000,100.0
+Portugal,PRT,2000,100.0
+Paraguay,PRY,2000,89.24
+West Bank and Gaza,PSE,2000,99.7
+French Polynesia,PYF,2000,100.0
+Qatar,QAT,2000,100.0
+Romania,ROU,2000,100.0
+Russian Federation,RUS,2000,100.0
+Rwanda,RWA,2000,6.2
+Saudi Arabia,SAU,2000,100.0
+Sudan,SDN,2000,23.0
+Senegal,SEN,2000,37.74
+Singapore,SGP,2000,100.0
+Solomon Islands,SLB,2000,4.55
+El Salvador,SLV,2000,84.52
+San Marino,SMR,2000,100.0
+Serbia,SRB,2000,100.0
+Sao Tome and Principe,STP,2000,52.9
+Suriname,SUR,2000,95.46
+Slovak Republic,SVK,2000,100.0
+Slovenia,SVN,2000,100.0
+Sweden,SWE,2000,100.0
+Sint Maarten (Dutch part),SXM,2000,100.0
+Seychelles,SYC,2000,94.03
+Turks and Caicos Islands,TCA,2000,95.6
+Chad,TCD,2000,3.19
+Togo,TGO,2000,16.96
+Thailand,THA,2000,82.1
+Tajikistan,TJK,2000,98.47
+Turkmenistan,TKM,2000,99.6
+Tonga,TON,2000,85.58
+Trinidad and Tobago,TTO,2000,91.29
+Tunisia,TUN,2000,94.8
+Tanzania,TZA,2000,9.06
+Uganda,UGA,2000,7.32
+Ukraine,UKR,2000,100.0
+Uruguay,URY,2000,97.55
+United States,USA,2000,100.0
+Uzbekistan,UZB,2000,99.57
+St. Vincent and the Grenadines,VCT,2000,79.84
+"Venezuela, RB",VEN,2000,98.9
+British Virgin Islands,VGB,2000,96.71
+Virgin Islands (U.S.),VIR,2000,100.0
+Vietnam,VNM,2000,87.81
+Vanuatu,VUT,2000,22.15
+Samoa,WSM,2000,87.84
+Kosovo,XKX,2000,100.0
+"Yemen, Rep.",YEM,2000,49.18
+South Africa,ZAF,2000,72.25
+Zambia,ZMB,2000,16.7
+Zimbabwe,ZWE,2000,33.85
+Aruba,ABW,2019,100.0
+Afghanistan,AFG,2019,97.7
+Angola,AGO,2019,45.67
+Albania,ALB,2019,100.0
+Andorra,AND,2019,100.0
+United Arab Emirates,ARE,2019,100.0
+Argentina,ARG,2019,100.0
+Armenia,ARM,2019,100.0
+Antigua and Barbuda,ATG,2019,100.0
+Australia,AUS,2019,100.0
+Austria,AUT,2019,100.0
+Azerbaijan,AZE,2019,100.0
+Burundi,BDI,2019,11.06
+Belgium,BEL,2019,100.0
+Benin,BEN,2019,40.32
+Burkina Faso,BFA,2019,18.38
+Bangladesh,BGD,2019,92.2
+Bulgaria,BGR,2019,100.0
+Bahrain,BHR,2019,100.0
+"Bahamas, The",BHS,2019,100.0
+Bosnia and Herzegovina,BIH,2019,100.0
+Belarus,BLR,2019,100.0
+Belize,BLZ,2019,92.72
+Bermuda,BMU,2019,100.0
+Bolivia,BOL,2019,96.3
+Brazil,BRA,2019,99.8
+Barbados,BRB,2019,100.0
+Brunei Darussalam,BRN,2019,100.0
+Bhutan,BTN,2019,100.0
+Botswana,BWA,2019,70.18
+Central African Republic,CAF,2019,14.3
+Canada,CAN,2019,100.0
+Switzerland,CHE,2019,100.0
+Channel Islands,CHI,2019,100.0
+Chile,CHL,2019,100.0
+China,CHN,2019,100.0
+Cote d'Ivoire,CIV,2019,68.55
+Cameroon,CMR,2019,63.45
+"Congo, Dem. Rep.",COD,2019,19.1
+"Congo, Rep.",COG,2019,48.33
+Colombia,COL,2019,99.77
+Comoros,COM,2019,84.05
+Cabo Verde,CPV,2019,95.53
+Costa Rica,CRI,2019,99.71
+Cuba,CUB,2019,99.8
+Curacao,CUW,2019,100.0
+Cayman Islands,CYM,2019,100.0
+Cyprus,CYP,2019,100.0
+Czech Republic,CZE,2019,100.0
+Germany,DEU,2019,100.0
+Djibouti,DJI,2019,61.28
+Dominica,DMA,2019,100.0
+Denmark,DNK,2019,100.0
+Dominican Republic,DOM,2019,100.0
+Algeria,DZA,2019,99.5
+Ecuador,ECU,2019,100.0
+"Egypt, Arab Rep.",EGY,2019,100.0
+Eritrea,ERI,2019,50.39
+Spain,ESP,2019,100.0
+Estonia,EST,2019,100.0
+Ethiopia,ETH,2019,48.27
+Finland,FIN,2019,100.0
+Fiji,FJI,2019,100.0
+France,FRA,2019,100.0
+Faroe Islands,FRO,2019,100.0
+"Micronesia, Fed. Sts.",FSM,2019,82.12
+Gabon,GAB,2019,90.69
+United Kingdom,GBR,2019,100.0
+Georgia,GEO,2019,100.0
+Ghana,GHA,2019,83.5
+Gibraltar,GIB,2019,100.0
+Guinea,GIN,2019,42.42
+"Gambia, The",GMB,2019,59.92
+Guinea-Bissau,GNB,2019,31.04
+Equatorial Guinea,GNQ,2019,66.59
+Greece,GRC,2019,100.0
+Grenada,GRD,2019,95.43
+Greenland,GRL,2019,100.0
+Guatemala,GTM,2019,95.72
+Guam,GUM,2019,100.0
+Guyana,GUY,2019,92.02
+"Hong Kong SAR, China",HKG,2019,100.0
+Honduras,HND,2019,92.78
+Croatia,HRV,2019,100.0
+Haiti,HTI,2019,45.37
+Hungary,HUN,2019,100.0
+Indonesia,IDN,2019,98.85
+Isle of Man,IMN,2019,100.0
+India,IND,2019,97.82
+Ireland,IRL,2019,100.0
+"Iran, Islamic Rep.",IRN,2019,100.0
+Iraq,IRQ,2019,100.0
+Iceland,ISL,2019,100.0
+Israel,ISR,2019,100.0
+Italy,ITA,2019,100.0
+Jamaica,JAM,2019,99.38
+Jordan,JOR,2019,100.0
+Japan,JPN,2019,100.0
+Kazakhstan,KAZ,2019,100.0
+Kenya,KEN,2019,69.7
+Kyrgyz Republic,KGZ,2019,99.88
+Cambodia,KHM,2019,93.0
+Kiribati,KIR,2019,100.0
+St. Kitts and Nevis,KNA,2019,100.0
+"Korea, Rep.",KOR,2019,100.0
+Kuwait,KWT,2019,100.0
+Lao PDR,LAO,2019,100.0
+Lebanon,LBN,2019,100.0
+Liberia,LBR,2019,27.65
+Libya,LBY,2019,68.53
+St. Lucia,LCA,2019,99.55
+Liechtenstein,LIE,2019,100.0
+Sri Lanka,LKA,2019,100.0
+Lesotho,LSO,2019,44.64
+Lithuania,LTU,2019,100.0
+Luxembourg,LUX,2019,100.0
+Latvia,LVA,2019,100.0
+"Macao SAR, China",MAC,2019,100.0
+St. Martin (French part),MAF,2019,100.0
+Morocco,MAR,2019,99.6
+Monaco,MCO,2019,100.0
+Moldova,MDA,2019,100.0
+Madagascar,MDG,2019,26.91
+Maldives,MDV,2019,100.0
+Mexico,MEX,2019,100.0
+Marshall Islands,MHL,2019,97.44
+North Macedonia,MKD,2019,100.0
+Mali,MLI,2019,48.02
+Malta,MLT,2019,100.0
+Myanmar,MMR,2019,68.36
+Montenegro,MNE,2019,100.0
+Mongolia,MNG,2019,99.13
+Northern Mariana Islands,MNP,2019,100.0
+Mozambique,MOZ,2019,29.62
+Mauritania,MRT,2019,45.81
+Mauritius,MUS,2019,100.0
+Malawi,MWI,2019,11.2
+Malaysia,MYS,2019,100.0
+Namibia,NAM,2019,55.2
+New Caledonia,NCL,2019,100.0
+Niger,NER,2019,18.77
+Nigeria,NGA,2019,55.4
+Nicaragua,NIC,2019,88.21
+Netherlands,NLD,2019,100.0
+Norway,NOR,2019,100.0
+Nepal,NPL,2019,89.9
+Nauru,NRU,2019,100.0
+New Zealand,NZL,2019,100.0
+Oman,OMN,2019,100.0
+Pakistan,PAK,2019,73.91
+Panama,PAN,2019,95.83
+Peru,PER,2019,98.35
+Philippines,PHL,2019,95.63
+Palau,PLW,2019,100.0
+Papua New Guinea,PNG,2019,63.46
+Poland,POL,2019,100.0
+Puerto Rico,PRI,2019,100.0
+"Korea, Dem. People's Rep.",PRK,2019,49.37
+Portugal,PRT,2019,100.0
+Paraguay,PRY,2019,100.0
+West Bank and Gaza,PSE,2019,100.0
+French Polynesia,PYF,2019,100.0
+Qatar,QAT,2019,100.0
+Romania,ROU,2019,100.0
+Russian Federation,RUS,2019,100.0
+Rwanda,RWA,2019,37.78
+Saudi Arabia,SAU,2019,100.0
+Sudan,SDN,2019,53.83
+Senegal,SEN,2019,70.4
+Singapore,SGP,2019,100.0
+Solomon Islands,SLB,2019,70.26
+Sierra Leone,SLE,2019,22.7
+El Salvador,SLV,2019,100.0
+San Marino,SMR,2019,100.0
+Somalia,SOM,2019,36.03
+Serbia,SRB,2019,99.8
+South Sudan,SSD,2019,6.72
+Sao Tome and Principe,STP,2019,75.18
+Suriname,SUR,2019,97.89
+Slovak Republic,SVK,2019,100.0
+Slovenia,SVN,2019,100.0
+Sweden,SWE,2019,100.0
+Eswatini,SWZ,2019,77.17
+Sint Maarten (Dutch part),SXM,2019,100.0
+Seychelles,SYC,2019,100.0
+Syrian Arab Republic,SYR,2019,89.32
+Turks and Caicos Islands,TCA,2019,100.0
+Chad,TCD,2019,8.4
+Togo,TGO,2019,52.44
+Thailand,THA,2019,99.9
+Tajikistan,TJK,2019,99.64
+Turkmenistan,TKM,2019,99.9
+Timor-Leste,TLS,2019,94.72
+Tonga,TON,2019,98.4
+Trinidad and Tobago,TTO,2019,100.0
+Tunisia,TUN,2019,100.0
+Turkey,TUR,2019,100.0
+Tuvalu,TUV,2019,100.0
+Tanzania,TZA,2019,37.7
+Uganda,UGA,2019,41.3
+Ukraine,UKR,2019,100.0
+Uruguay,URY,2019,99.9
+United States,USA,2019,100.0
+Uzbekistan,UZB,2019,100.0
+St. Vincent and the Grenadines,VCT,2019,100.0
+"Venezuela, RB",VEN,2019,100.0
+British Virgin Islands,VGB,2019,100.0
+Virgin Islands (U.S.),VIR,2019,100.0
+Vietnam,VNM,2019,99.4
+Vanuatu,VUT,2019,64.67
+Samoa,WSM,2019,99.2
+Kosovo,XKX,2019,100.0
+"Yemen, Rep.",YEM,2019,72.75
+South Africa,ZAF,2019,85.0
+Zambia,ZMB,2019,43.0
+Zimbabwe,ZWE,2019,41.09
