@@ -14,12 +14,6 @@
   font-size: 14px;
 }
 
-.aging-section #aging-chart .aging-note {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #666;
-}
-
 .aging-section #aging-chart circle:hover {
   fill: #d97706;
   fill-opacity: 1;

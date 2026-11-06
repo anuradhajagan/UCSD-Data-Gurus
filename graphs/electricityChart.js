@@ -5,6 +5,7 @@ const container = document.querySelector("#electricity-chart");
 
 container.innerHTML = `
   <p class="electricity-status" role="status">Loading data...</p>
+  <button class="electricity-reset">Reset zoom</button>
   <div class="electricity-maps"></div>
   <div class="electricity-legend"></div>
   <div class="electricity-tooltip" style="display: none"></div>
@@ -12,6 +13,7 @@ container.innerHTML = `
   <p class="note">
     Light cream = lower access; dark purple = higher access;
   gray = no data. Hover over a country to see its value.
+    Scroll or double-click to zoom, drag to move. Both maps move together.
   </p>
 `;
 
@@ -75,6 +77,25 @@ async function initialize() {
 
   const path = d3.geoPath(projection);
 
+  // Zoom: zooming one map zooms the other one the same way.
+  const svgs = [];
+  const maps = [];
+
+  const zoom = d3.zoom()
+    .scaleExtent([1, 8])
+    .translateExtent([[0, 0], [width, height]])
+    .on("zoom", function (event) {
+      maps.forEach(g => g.attr("transform", event.transform));
+      if (event.sourceEvent) {
+        svgs.forEach(s => {
+          if (s.node() !== this) s.call(zoom.transform, event.transform);
+        });
+      }
+    });
+
+  container.querySelector(".electricity-reset").onclick = () =>
+    svgs.forEach(s => s.call(zoom.transform, d3.zoomIdentity));
+
   // Draw one map for each year.
   for (const year of [2000, 2019]) {
     const yearData = byYear.get(year) ?? [];
@@ -92,13 +113,19 @@ async function initialize() {
       .attr("viewBox", `0 0 ${width} ${height}`)
       .attr("aria-label", `Electricity access in ${year}`);
 
-    const countries = svg.append("g")
+    const map = svg.append("g");
+    svgs.push(svg);
+    maps.push(map);
+    svg.call(zoom);
+
+    const countries = map
       .selectAll("path")
       .data(world.features)
       .join("path")
       .attr("d", path)
       .attr("stroke", "white")
       .attr("stroke-width", 0.4)
+      .attr("vector-effect", "non-scaling-stroke")
       .attr("fill", feature => {
         const code = feature.properties["ISO3166-1-Alpha-3"];
         const observation = values.get(code);

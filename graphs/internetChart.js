@@ -8,6 +8,19 @@
     { key: "end", label: "~2019", color: "steelblue" }, // dark = later
   ];
 
+  // floating tooltip, made once so redraws on resize don't duplicate it
+  const tooltip = d3.select("body").append("div")
+    .style("position", "fixed")
+    .style("background", "#222")
+    .style("color", "white")
+    .style("padding", "8px 12px")
+    .style("border-radius", "5px")
+    .style("font-size", "14px")
+    .style("white-space", "pre-line")
+    .style("pointer-events", "none")
+    .style("z-index", "1000")
+    .style("display", "none");
+
   function draw(data) {
     const width = App.widthOf(SEL);
     const narrow = width < 500;
@@ -47,7 +60,22 @@
     bars.append("rect")
       .attr("x", (b) => x1(b.p.key)).attr("width", x1.bandwidth())
       .attr("y", (b) => y(b.d.internet)).attr("height", (b) => h - y(b.d.internet))
-      .attr("fill", (b) => b.p.color);
+      .attr("fill", (b) => b.p.color)
+      .on("mouseenter", function (event, b) {
+        d3.select(this).attr("fill", "#e87924");
+        tooltip
+          .style("display", "block")
+          .text(`${b.d.group}\nYear: ${b.d.year}\nUsing the internet: ${b.d.internet.toFixed(1)}%`);
+      })
+      .on("mousemove", function (event) {
+        tooltip
+          .style("left", event.clientX + 12 + "px")
+          .style("top", event.clientY + 12 + "px");
+      })
+      .on("mouseleave", function (event, b) {
+        d3.select(this).attr("fill", b.p.color);
+        tooltip.style("display", "none");
+      });
     // value on top of each bar, and the actual year if it isn't 2000/2019
     bars.append("text").attr("class", "point-label").attr("text-anchor", "middle")
       .attr("x", (b) => x1(b.p.key) + x1.bandwidth() / 2).attr("y", (b) => y(b.d.internet) - 4)
