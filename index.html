@@ -32,45 +32,44 @@
 
   <main>
     <!-- chart 1 -->
-    <section class="fertility-section" data-chart="fertility">
-      <h2>1. Family Size: Fertility Rate (1960–2019)</h2>
-      <p class="subtitle">The average number of children born per woman from 1960 to 2019 decreased from about 5 to 2.5 showing that family sizes are getting smaller.</p>
-      <div class="chart" id="fertility-chart"></div>
-      <p class="source">Source: World Bank</p>
-    </section>
-
-    <!-- chart 2 -->
-    <section class="internet-section" data-chart="internet" hidden>
-      <h2>2. Internet Users by Country Income Level (~2000 vs ~2019)</h2>
+    <section class="internet-section" data-chart="internet">
+      <h2>1. Internet Users by Country Income Level (~2000 vs ~2019)</h2>
       <p class="subtitle">Internet use grew in every income group from 2000 to 2019, but only about 14% of people in low-income countries were online (2017, the latest data) compared with 89% in high-income countries.</p>
       <div class="chart" id="internet-chart"></div>
       <p class="note">Light blue = ~2000; dark blue = ~2019. Hover over a bar to see the exact percentage and year.</p>
       <p class="source">Source: World Bank</p>
     </section>
 
-    <!-- chart 3 -->
+    <!-- chart 2 -->
      <section class="electricity-section" data-chart="electricity" hidden>
-      <h2>3. Electricity Access change (2000 vs 2019).</h2>
+      <h2>2. Electricity Access change (2000 vs 2019).</h2>
       <p class="subtitle">Electricity access expanded between 2000 and 2019, but large gaps remained across sub-Saharan Africa..</p>
       <div class="chart" id="electricity-chart"></div> 
       <p class="source">Source: World Bank</p>
      </section>
 
-     <!-- chart 4 -->
-    <section class="aging-section" data-chart="aging" hidden>
-      <h2>4. Population Aging (1960–2020)</h2>
-      <p class="subtitle">The proportion of people aged 65 and above has increased in most countries from 1960 to 2020, reflecting longer life expectancy and declining fertility rates.</p>
-      <div class="chart" id="aging-chart"></div>
-      <p class="source">Source: World Bank</p>
-    </section>
-
-
-    <!-- chart 5 -->
+    <!-- chart 3 -->
     <section class="research-section" data-chart="research" hidden>
-      <h2>5. Average Research and Development(R&D) Expenditure Across Countries</h2>
+      <h2>3. Average Research and Development(R&D) Expenditure Across Countries</h2>
       <p>Average R&D spending as a share of GDP rose overall from 1996 to 2018,
   with fluctuations along the way.</p>
       <div id="research-chart"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- chart 4 -->
+    <section class="fertility-section" data-chart="fertility" hidden>
+      <h2>4. Family Size: Fertility Rate (1960–2019)</h2>
+      <p class="subtitle">The average number of children born per woman from 1960 to 2019 decreased from about 5 to 2.5 showing that family sizes are getting smaller.</p>
+      <div class="chart" id="fertility-chart"></div>
+      <p class="source">Source: World Bank</p>
+    </section>
+
+    <!-- chart 5 -->
+    <section class="aging-section" data-chart="aging" hidden>
+      <h2>5. Population Aging (1960–2020)</h2>
+      <p class="subtitle">The proportion of people aged 65 and above has increased in most countries from 1960 to 2020, reflecting longer life expectancy and declining fertility rates.</p>
+      <div class="chart" id="aging-chart"></div>
       <p class="source">Source: World Bank</p>
     </section>
  
@@ -79,11 +78,11 @@
     <section class="plan">
       <h2>Interactive chart plan</h2>
       <p>What users can click, filter, or change.</p>
-      <p><b>Graph 1 Interactive chart plan:</b> Users can choose a country or “World” from the dropdown to see how the number of children born per woman has changed over time. Hovering over the line will show the exact value for each year.</p>
-      <p><b>Graph 2 Interactive chart plan:</b> Users can hover over the bars to see the exact percentage of people using the internet and the year for each income group.</p>
-      <p><b>Graph 3 Interactive chart plan:</b> Users can hover over a country on either map to see its name, year, and percentage of people with electricity access.</p>
-      <p><b>Graph 4 Interactive chart plan:</b> Users will be able to hover over each dot to see the country name, year, and percentage of people aged 65 and above.</p>
-      <p><b>Graph 5 Interactive chart plan:</b> Users can hover over each dot to see the year, average R&D expenditure as a percentage of GDP.</p>
+      <p><b>Graph 1 Interactive chart plan:</b> Users can hover over the bars to see the exact percentage of people using the internet and the year for each income group.</p>
+      <p><b>Graph 2 Interactive chart plan:</b> Users can hover over a country on either map to see its name, year, and percentage of people with electricity access.</p>
+      <p><b>Graph 3 Interactive chart plan:</b> Users can hover over each dot to see the year, average R&D expenditure as a percentage of GDP.</p>
+      <p><b>Graph 4 Interactive chart plan:</b> Users can choose a country or “World” from the dropdown to see how the number of children born per woman has changed over time. Hovering over the line will show the exact value for each year.</p>
+      <p><b>Graph 5 Interactive chart plan:</b> Users will be able to hover over each dot to see the country name, year, and percentage of people aged 65 and above.</p>
     </section>
   </main>
 
@@ -98,11 +97,11 @@
     // charts 1-2 are drawn by main.js; charts 3-5 are ES modules that draw themselves
     // when imported, so each one is loaded the first time its button is clicked.
     const CHARTS = [
-      { key: "fertility", label: "1. Fertility" },
-      { key: "internet", label: "2. Internet" },
-      { key: "electricity", label: "3. Electricity", module: "./graphs/electricityChart.js" },
-      { key: "aging", label: "4. Aging", module: "./graphs/agingChart.js" },
-      { key: "research", label: "5. R&D", module: "./graphs/researchChart.js" },
+      { key: "internet", label: "1. Internet" },
+      { key: "electricity", label: "2. Electricity", module: "./graphs/electricityChart.js" },
+      { key: "research", label: "3. R&D", module: "./graphs/researchChart.js" },
+      { key: "fertility", label: "4. Fertility" },
+      { key: "aging", label: "5. Aging", module: "./graphs/agingChart.js" },
     ];
 
     const buttons = d3.select(".chart-buttons")
