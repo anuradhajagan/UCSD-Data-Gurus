@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Living Conditions 1960–2020</title>
   <!-- all paths are relative so it works on github pages from root or /docs -->
-  <link rel="stylesheet" href="css/style.css?v=15" />
+  <link rel="stylesheet" href="css/style.css?v=16" />
   <link rel="stylesheet" href="css/electricity.css">
   <link rel="stylesheet" href="css/aging.css">
   <link rel="stylesheet" href="css/research.css">
@@ -62,8 +62,9 @@
       <h2>4. Family Size: Fertility Rate (1960–2019)</h2>
       <p class="subtitle">The average number of children born per woman from 1960 to 2019 decreased from about 5 to 2.5 showing that family sizes are getting smaller.</p>
       <div class="chart" id="fertility-chart"></div>
-      <p class="note">Drag across the chart to zoom into those years. Double-click the chart to zoom back out.</p>
+      <p class="note">Drag across the chart to zoom into the selected years. Double-click the chart to zoom back out.</p>
       <p class="source">Source: World Bank</p>
+      <p class="d3-note">Line chart with zoom: <a href="https://d3-graph-gallery.com/graph/line_brushZoom.html">https://d3-graph-gallery.com/graph/line_brushZoom.html</a></p>
     </section>
 
     <!-- chart 5 -->
@@ -95,8 +96,6 @@
   <script src="graphs/internetChart.js?v=10"></script>
   <script>
     // one button per chart, built with a D3 data join.
-    // charts 1-2 are drawn by main.js; charts 3-5 are ES modules that draw themselves
-    // when imported, so each one is loaded the first time its button is clicked.
     const CHARTS = [
       { key: "internet", label: "1. Internet" },
       { key: "electricity", label: "2. Electricity", module: "./graphs/electricityChart.js" },
@@ -132,7 +131,6 @@
         });
       } else if (window.App && App.data) {
         // fertility and internet size themselves from their container's width,
-        // which is 0 while hidden, so redraw them now that they're visible
         App.charts.forEach((c) => c.draw(App.data));
       }
 

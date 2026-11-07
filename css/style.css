@@ -13,7 +13,8 @@ h2 { font-size: 18px; margin-bottom: 4px; }
 .team { color: #555; margin-top: -8px; }
 section { margin: 36px 0; }
 .subtitle { color: #444; font-size: 14px; margin: 0 0 10px; }
-.source { color: #777; font-size: 12px; margin: 4px 0; }
+.source, .d3-note { color: #777; font-size: 12px; margin: 4px 0; }
+.d3-note a { color: inherit; }
 .note { color: #666; font-size: 14px; line-height: 1.5; margin: 8px 0; }
 .chart { width: 100%; }
 .chart svg { display: block; }
