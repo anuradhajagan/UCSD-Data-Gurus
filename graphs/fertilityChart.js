@@ -16,7 +16,7 @@
     const width = App.widthOf(SEL);
     const height = Math.max(260, Math.min(400, width * 0.5));
     const margin = { top: 20, right: 20, bottom: 45, left: 55 };
-    const slider = { top: height + 28, height: 36 }; // the slider strip sits under the main chart
+    const slider = { top: height + 28, height: 18 }; // the year slider sits under the main chart
     const w = width - margin.left - margin.right;
     const h = height - margin.top - margin.bottom;
 
@@ -46,15 +46,14 @@
       .attr("fill", "none").attr("stroke", "steelblue").attr("stroke-width", 2);
     const endLabels = g.append("g");
 
-    // ---- slider: a small overview of the whole series with a d3.brushX on top ----
+    // ---- slider: a year axis with a d3.brushX on top ----
     const sx = d3.scaleLinear().domain(full).range([0, w]);
-    const sy = d3.scaleLinear().domain(y.domain()).range([slider.height, 0]);
     const sg = svg.append("g").attr("transform", `translate(${margin.left},${slider.top})`);
 
     const rangeLabel = sg.append("text").attr("class", "point-label").attr("y", -8);
-    sg.append("path").datum(all)
-      .attr("fill", "none").attr("stroke", "#a9c6e3").attr("stroke-width", 1.5)
-      .attr("d", d3.line().x((d) => sx(d.year)).y((d) => sy(d.fertility)));
+    // plain track for the slider, just a light bar across the years
+    sg.append("rect").attr("class", "year-track")
+      .attr("width", w).attr("height", slider.height).attr("rx", 3);
     sg.append("g").attr("transform", `translate(0,${slider.height})`)
       .call(d3.axisBottom(sx).ticks(width < 500 ? 5 : 10).tickFormat(d3.format("d")));
 
@@ -84,7 +83,7 @@
 
       rangeLabel.text(range
         ? `Showing ${start}–${end} (click outside the blue box to show all years)`
-        : "Drag across this strip to zoom into a range of years");
+        : "Drag across the years to zoom in");
     }
 
     // turn a brush selection (pixels) into whole years, at least MIN_SPAN apart
