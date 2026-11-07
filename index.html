@@ -9,17 +9,30 @@
   <link rel="stylesheet" href="css/electricity.css">
   <link rel="stylesheet" href="css/aging.css">
   <link rel="stylesheet" href="css/research.css">
-  <script type="module" src="graphs/electricityChart.js"></script>
-  <script type="module" src="graphs/agingChart.js"></script>
-  <script type="module" src="./graphs/researchChart.js"></script>
+  <style>
+    /* chart picker: one button per chart, built with D3 at the bottom of the page */
+    .chart-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px; }
+    .chart-buttons button {
+      font: inherit; font-size: 14px; padding: 8px 14px; cursor: pointer;
+      border: 1px solid steelblue; border-radius: 18px; background: white; color: steelblue;
+    }
+    .chart-buttons button:hover { background: #eef4fa; }
+    .chart-buttons button.active { background: steelblue; color: white; }
+    .chart-buttons button:focus-visible { outline: 2px solid #e87924; outline-offset: 2px; }
+    section[data-chart][hidden] { display: none; }
+    section[data-chart] { margin-top: 16px; }
+  </style>
 </head>
 <body>
   <h1>How have living conditions and development changed across countries from 1960 to 2020?</h1>
   <p class="team">DSC 209R Project 3: Juan Mo, Nick Puckdee, Snigdha Tiwari, Anuradha Jaganathan</p>
 
+  <!-- D3 fills this with one button per chart -->
+  <nav class="chart-buttons" aria-label="Choose a chart"></nav>
+
   <main>
     <!-- chart 1 -->
-    <section class="fertility-section">
+    <section class="fertility-section" data-chart="fertility">
       <h2>1. Family Size: Fertility Rate (1960–2019)</h2>
       <p class="subtitle">The average number of children born per woman from 1960 to 2019 decreased from about 5 to 2.5 showing that family sizes are getting smaller.</p>
       <div class="chart" id="fertility-chart"></div>
@@ -27,7 +40,7 @@
     </section>
 
     <!-- chart 2 -->
-    <section class="internet-section">
+    <section class="internet-section" data-chart="internet" hidden>
       <h2>2. Internet Users by Country Income Level (~2000 vs ~2019)</h2>
       <p class="subtitle">Internet use grew in every income group from 2000 to 2019, but only about 14% of people in low-income countries were online (2017, the latest data) compared with 89% in high-income countries.</p>
       <div class="chart" id="internet-chart"></div>
@@ -36,7 +49,7 @@
     </section>
 
     <!-- chart 3 -->
-     <section class="electricity-section">
+     <section class="electricity-section" data-chart="electricity" hidden>
       <h2>3. Electricity Access change (2000 vs 2019).</h2>
       <p class="subtitle">Electricity access expanded between 2000 and 2019, but large gaps remained across sub-Saharan Africa..</p>
       <div class="chart" id="electricity-chart"></div> 
@@ -44,7 +57,7 @@
      </section>
 
      <!-- chart 4 -->
-    <section class="aging-section">
+    <section class="aging-section" data-chart="aging" hidden>
       <h2>4. Population Aging (1960–2020)</h2>
       <p class="subtitle">The proportion of people aged 65 and above has increased in most countries from 1960 to 2020, reflecting longer life expectancy and declining fertility rates.</p>
       <div class="chart" id="aging-chart"></div>
@@ -53,7 +66,7 @@
 
 
     <!-- chart 5 -->
-    <section class="research-section">
+    <section class="research-section" data-chart="research" hidden>
       <h2>5. Average Research and Development(R&D) Expenditure Across Countries</h2>
       <p>Average R&D spending as a share of GDP rose overall from 1996 to 2018,
   with fluctuations along the way.</p>
@@ -71,7 +84,7 @@
       <p><b>Graph 3 Interactive chart plan:</b> Users can hover over a country on either map to see its name, year, and percentage of people with electricity access.</p>
       <p><b>Graph 4 Interactive chart plan:</b> Users will be able to hover over each dot to see the country name, year, and percentage of people aged 65 and above.</p>
       <p><b>Graph 5 Interactive chart plan:</b> Users can hover over each dot to see the year, average R&D expenditure as a percentage of GDP.</p>
-    
+    </section>
   </main>
 
   <!-- d3 v7, pinned so it doesn't change on us -->
@@ -80,5 +93,55 @@
   <script src="graphs/main.js?v=10"></script>
   <script src="graphs/fertilityChart.js?v=10"></script>
   <script src="graphs/internetChart.js?v=10"></script>
+  <script>
+    // one button per chart, built with a D3 data join.
+    // charts 1-2 are drawn by main.js; charts 3-5 are ES modules that draw themselves
+    // when imported, so each one is loaded the first time its button is clicked.
+    const CHARTS = [
+      { key: "fertility", label: "1. Fertility" },
+      { key: "internet", label: "2. Internet" },
+      { key: "electricity", label: "3. Electricity", module: "./graphs/electricityChart.js" },
+      { key: "aging", label: "4. Aging", module: "./graphs/agingChart.js" },
+      { key: "research", label: "5. R&D", module: "./graphs/researchChart.js" },
+    ];
+
+    const buttons = d3.select(".chart-buttons")
+      .selectAll("button")
+      .data(CHARTS)
+      .join("button")
+      .attr("type", "button")
+      .text((d) => d.label)
+      .on("click", (event, d) => show(d.key));
+
+    function show(key) {
+      const chart = CHARTS.find((c) => c.key === key) || CHARTS[0];
+
+      buttons
+        .classed("active", (d) => d === chart)
+        .attr("aria-pressed", (d) => d === chart);
+
+      d3.selectAll("section[data-chart]")
+        .property("hidden", function () { return this.dataset.chart !== chart.key; });
+
+      if (chart.module) {
+        // runs the chart's D3 code once; the browser caches the import after that
+        import(chart.module).catch((err) => {
+          console.error(err);
+          d3.select(`#${chart.key}-chart`).html("")
+            .append("p").attr("class", "error").text("couldn't load this chart");
+        });
+      } else if (window.App && App.data) {
+        // fertility and internet size themselves from their container's width,
+        // which is 0 while hidden, so redraw them now that they're visible
+        App.charts.forEach((c) => c.draw(App.data));
+      }
+
+      history.replaceState(null, "", "#" + chart.key);
+    }
+
+    // open the chart named in the URL (e.g. index.html#aging), or the first one
+    show(location.hash.slice(1));
+    window.addEventListener("hashchange", () => show(location.hash.slice(1)));
+  </script>
 </body>
 </html>
