@@ -1,23 +1,34 @@
-/* chart 1: world fertility rate (births per woman), 1960-2019, with the 2.1 replacement line */
+/* chart 4: world fertility rate (births per woman), 1960-2019, with the 2.1 replacement line.
+   a d3 brush under the chart works as a year-range slider: drag it to zoom the main chart into those years */
 (function () {
   const SEL = "#fertility-chart";
   const REPLACEMENT = 2.1; // births per woman needed for a population to replace itself
+  const MIN_SPAN = 2;      // smallest zoom the slider allows, in years
+
+  // [startYear, endYear] picked with the slider, or null for all years.
+  // kept outside draw() so the zoom survives redraws (window resize, switching charts)
+  let range = null;
 
   function draw(data) {
+    const all = data.fertility;
+    const full = d3.extent(all, (d) => d.year); // years the data covers, e.g. [1960, 2019]
+
     const width = App.widthOf(SEL);
     const height = Math.max(260, Math.min(400, width * 0.5));
     const margin = { top: 20, right: 20, bottom: 45, left: 55 };
+    const slider = { top: height + 28, height: 36 }; // the slider strip sits under the main chart
     const w = width - margin.left - margin.right;
     const h = height - margin.top - margin.bottom;
 
-    const svg = d3.select(SEL).html("").append("svg").attr("width", width).attr("height", height);
+    const svg = d3.select(SEL).html("").append("svg")
+      .attr("width", width).attr("height", slider.top + slider.height + 25);
     const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
-    const x = d3.scaleLinear().domain([1960, 2020]).range([0, w]);
-    const y = d3.scaleLinear().domain([0, d3.max(data.fertility, (d) => d.fertility)]).nice().range([h, 0]);
+    // x changes with the slider; y stays fixed so zooming in doesn't exaggerate small changes
+    const x = d3.scaleLinear().range([0, w]);
+    const y = d3.scaleLinear().domain([0, d3.max(all, (d) => d.fertility)]).nice().range([h, 0]);
 
-    g.append("g").attr("transform", `translate(0,${h})`)
-      .call(d3.axisBottom(x).ticks(width < 500 ? 5 : 12).tickFormat(d3.format("d")));
+    const xAxis = g.append("g").attr("transform", `translate(0,${h})`);
     g.append("g").call(d3.axisLeft(y).ticks(6));
 
     g.append("text").attr("class", "axis-label").attr("x", w / 2).attr("y", h + 38)
@@ -31,19 +42,78 @@
     g.append("text").attr("class", "point-label").attr("x", 6).attr("y", y(REPLACEMENT) + 15)
       .text(`replacement level (${REPLACEMENT})`);
 
-    g.append("path").datum(data.fertility)
-      .attr("fill", "none").attr("stroke", "steelblue").attr("stroke-width", 2)
-      .attr("d", d3.line().x((d) => x(d.year)).y((d) => y(d.fertility)));
+    const line = g.append("path")
+      .attr("fill", "none").attr("stroke", "steelblue").attr("stroke-width", 2);
+    const endLabels = g.append("g");
 
-    // label the first and last values
-    const first = data.fertility[0], last = data.fertility[data.fertility.length - 1];
-    [first, last].forEach((d, i) => {
-      g.append("circle").attr("cx", x(d.year)).attr("cy", y(d.fertility)).attr("r", 3.5).attr("fill", "steelblue");
-      g.append("text").attr("class", "point-label")
-        .attr("x", x(d.year) + (i ? -6 : 6)).attr("y", y(d.fertility) - 10)
-        .attr("text-anchor", i ? "end" : "start")
-        .text(`${d.year}: ${d.fertility.toFixed(1)}`);
-    });
+    // ---- slider: a small overview of the whole series with a d3.brushX on top ----
+    const sx = d3.scaleLinear().domain(full).range([0, w]);
+    const sy = d3.scaleLinear().domain(y.domain()).range([slider.height, 0]);
+    const sg = svg.append("g").attr("transform", `translate(${margin.left},${slider.top})`);
+
+    const rangeLabel = sg.append("text").attr("class", "point-label").attr("y", -8);
+    sg.append("path").datum(all)
+      .attr("fill", "none").attr("stroke", "#a9c6e3").attr("stroke-width", 1.5)
+      .attr("d", d3.line().x((d) => sx(d.year)).y((d) => sy(d.fertility)));
+    sg.append("g").attr("transform", `translate(0,${slider.height})`)
+      .call(d3.axisBottom(sx).ticks(width < 500 ? 5 : 10).tickFormat(d3.format("d")));
+
+    // redraw the parts of the main chart that depend on the selected years
+    function update() {
+      const [start, end] = range || full;
+      x.domain(range || [1960, 2020]);
+      const shown = all.filter((d) => d.year >= start && d.year <= end);
+
+      // whole years only, so a short range doesn't get ticks like 2010.5
+      const ticks = x.ticks(width < 500 ? 5 : 12).filter(Number.isInteger);
+      xAxis.call(d3.axisBottom(x).tickValues(ticks).tickFormat(d3.format("d")));
+
+      line.datum(shown).attr("d", d3.line().x((d) => x(d.year)).y((d) => y(d.fertility)));
+
+      // label the first and last values in view
+      endLabels.selectAll("*").remove();
+      if (shown.length) {
+        [shown[0], shown[shown.length - 1]].forEach((d, i) => {
+          endLabels.append("circle").attr("cx", x(d.year)).attr("cy", y(d.fertility)).attr("r", 3.5).attr("fill", "steelblue");
+          endLabels.append("text").attr("class", "point-label")
+            .attr("x", x(d.year) + (i ? -6 : 6)).attr("y", y(d.fertility) - 10)
+            .attr("text-anchor", i ? "end" : "start")
+            .text(`${d.year}: ${d.fertility.toFixed(1)}`);
+        });
+      }
+
+      rangeLabel.text(range
+        ? `Showing ${start}–${end} (click outside the blue box to show all years)`
+        : "Drag across this strip to zoom into a range of years");
+    }
+
+    // turn a brush selection (pixels) into whole years, at least MIN_SPAN apart
+    function toYears(selection) {
+      let [a, b] = selection.map((px) => Math.round(sx.invert(px)));
+      if (b - a < MIN_SPAN) {
+        b = Math.min(full[1], a + MIN_SPAN);
+        a = b - MIN_SPAN;
+      }
+      return [a, b];
+    }
+
+    const brush = d3.brushX()
+      .extent([[0, 0], [w, slider.height]])
+      .on("brush", ({ selection, sourceEvent }) => {
+        if (!sourceEvent || !selection) return; // skip moves made by the code below
+        range = toYears(selection);
+        update();
+      })
+      .on("end", ({ selection, sourceEvent }) => {
+        if (!sourceEvent) return;
+        range = selection ? toYears(selection) : null; // a click with no drag clears the zoom
+        if (range) brushG.call(brush.move, range.map(sx)); // snap the box to whole years
+        update();
+      });
+
+    const brushG = sg.append("g").attr("class", "year-slider").call(brush);
+    if (range) brushG.call(brush.move, range.map(sx)); // restore the zoom after a redraw
+    update();
   }
 
   App.charts.push({ draw });
