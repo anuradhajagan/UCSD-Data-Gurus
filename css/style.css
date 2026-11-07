@@ -25,8 +25,3 @@ section { margin: 36px 0; }
   section { break-inside: avoid; }
   body { padding: 0; }
 }
-
-/* fertility chart year slider (a d3 brush) */
-.year-track { fill: #eef2f6; }
-.year-slider .selection { fill: steelblue; fill-opacity: 0.15; stroke: steelblue; cursor: default; }
-.year-slider .handle { fill: steelblue; rx: 2px; }
