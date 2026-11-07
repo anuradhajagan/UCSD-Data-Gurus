@@ -98,6 +98,9 @@
 
     const brush = d3.brushX()
       .extent([[0, 0], [w, slider.height]])
+      // ignore presses on the blue box itself, so it can't be dragged around;
+      // dragging its edges or across the years still works
+      .filter((event) => !event.button && !event.target.classList.contains("selection"))
       .on("brush", ({ selection, sourceEvent }) => {
         if (!sourceEvent || !selection) return; // skip moves made by the code below
         range = toYears(selection);
